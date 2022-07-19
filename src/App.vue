@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Navbar id="navbar" />
+    <ContainerMain id="container-main"/>
+    <FeaturedWork id="featured-work"/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navbar from "./components/Navbar.vue";
+import ContainerMain from "./components/ContainerMain.vue";
+import FeaturedWork from "./components/FeaturedWork.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Navbar,
+    ContainerMain,
+    FeaturedWork
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap');
+#app{
+  font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(2em);
+
+width: 100%;
+height: 70vh;
+color: #fff;
+
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 </style>
