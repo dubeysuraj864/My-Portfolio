@@ -25,16 +25,24 @@ export default {
 #app{
   font-family: 'Poppins', sans-serif;
     backdrop-filter: blur(2em);
-
+  user-select: none;
 width: 100%;
 height: 70vh;
 color: #fff;
 
 }
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 
