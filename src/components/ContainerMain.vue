@@ -144,7 +144,8 @@ export default {
     position: absolute;
     /* top: 50.6vh; */
     left: 21vw;
-      border: 1vw solid #fff;
+      /* border: 1vw solid #fff; */
+        padding: 3vw 6vw;
         color: rgb(255, 255, 255);
         box-shadow: none;
    }
