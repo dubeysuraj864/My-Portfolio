@@ -39,7 +39,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   font-weight: bold;
 }.logo img{
   width: 5vw;
@@ -47,21 +47,21 @@ export default {
 }
 a {
   text-decoration: none;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   font-weight: 500;
   margin: 0.7vw;
   color: rgb(255, 255, 255);
-  transition: all 300ms ease-in;
+  transition: all 300ms ease;
 }
 a:hover{
-  color: rgba(255, 255, 255, 0.398);
+   color: rgba(255, 255, 255, 0.598);
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: rgb(255, 255, 255);
-  background-color: rgba(181, 181, 181, 0.198);
+  background-color: rgba(255, 255, 255, 0.293);
   padding: 1vw;
   backdrop-filter: blur(1vw);
 }
@@ -86,7 +86,7 @@ nav {
   .logo {
     position: absolute;
     top: 2vh;
-    left: 77vw;
+    left: 80vw;
     font-size: 7.5vw;
   }
   a {

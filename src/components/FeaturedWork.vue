@@ -69,14 +69,16 @@ main {
   padding: 2vw 0vw;
   color: #000;
   text-align: center;
+  
 }
 
 .title {
-  font-size: 3vw;
-  margin: 2vw 0vw;
+  font-size: 8vw;
+  margin: 1.5vw 0vw;
+ 
 }
 .title span {
-  border-bottom: 0.5vw solid #000;
+  border-bottom: 0.5vw solid rgba(0, 0, 0, 0);
   width: fit-content;
 }
 
@@ -88,7 +90,7 @@ main {
 .group-work {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .box {
   margin: 1vw;
@@ -111,15 +113,19 @@ main {
  
  @media (max-width: 600px) {
 
+main{
+    padding: 6vw 0vw 20vw 0vw;
+}
   .title {
   font-size: 8vw;
   font-weight: 600;
   margin: 5vw 0vw;
+  
 
 }
 
 .title span {
-  border-bottom: 0.8vw solid #000;
+  border-bottom: none;
 
 }
 .group-work {

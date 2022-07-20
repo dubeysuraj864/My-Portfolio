@@ -6,11 +6,11 @@
           Hi, I am Suraj <br />
           A Front-End Developer <br />
           based in Delhi, India.
-          <!-- <div class="intro">
+          <div class="intro">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
           Est, posuere ultrices viverra enim sit urna tempor <br />
           pellentesque.
-        </div> -->
+        </div>
           <div class="button">
             <button id="contact" class="fill"><a style="text-decoration: none;   color: rgb(255, 255, 255);" href="https://www.linkedin.com/in/suraj-dubey-a1baa3202/">Contact Me Now</a></button>
           </div>
@@ -46,11 +46,12 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 32.6vw;
+  height: 33vw;
   position: relative;
+  
 }
 .left {
-  margin-top: 7vw;
+  margin-top: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,19 +87,18 @@ export default {
   color: rgb(255, 255, 255);
   box-shadow: 0.2vw 0.4vw 1vw rgba(0, 0, 0, 0.25);
   border-radius: 0.1vw;
-  border: 0.4vw solid #fff;
-
   outline: none;
   font-style: normal;
   font-weight: 500;
   font-size: 1.2vw;
   cursor: pointer;
+  border: none;
 }
 #contact:hover {
-  border: 0.4vw solid rgba(255, 255, 255, 0);
   transition: all 300ms ease;
   color: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.341);
+    box-shadow: none;
 }
 .right {
   position: absolute;
@@ -117,7 +117,9 @@ export default {
     flex-direction: column;
  background: linear-gradient(to bottom, #63e8ea, #ffd025);
   }
-
+.intro{
+  display: none;
+}
   .left {
     position: absolute;
     top: 10vh;
@@ -148,10 +150,12 @@ export default {
     position: absolute;
     top: 34vh;
     right: 0vw;
+    
   }
   .right img {
     width: 104vw;
     height: 103.5vw;
+
   }
 }
 </style>
