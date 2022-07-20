@@ -19,6 +19,16 @@
       <div class="right">
         <img src="../assets/me-cutout.png" alt="" />
       </div>
+      <!-- <div class="icons">
+        <img src="../assets/html-5.png" class="html" alt="icon">
+        <img src="../assets/css-3.png" class="css" alt="">
+        <img src="../assets/js.png" class="js" alt="">
+        <img src="../assets/physics.png" class="react" alt="">
+        <img src="../assets/vue.png" class="vue" alt="">
+        <img src="../assets/sass.png" class="sass" alt="">
+        <img src="../assets/github-sign.png" class="github" alt="">
+        <img src="../assets/java.png" class="java" alt="">
+      </div> -->
     </div>
 </template>
 
@@ -112,7 +122,54 @@ export default {
   width: 44vw;
   height: 44vw;
 }
-
+.icons{
+  position: absolute;
+}
+.icons img{
+  z-index: 3;
+  width: 5vw;
+  height : auto;
+}
+.html{
+    position: absolute;
+      top: -30vh;
+    right: -10vw;
+}
+.css{
+    position: absolute;
+     top: -20vh;
+    right: -0vw;
+}
+.js{
+    position: absolute;
+    top: -40vh;
+    right: -20vw;
+}
+.react{
+    position: absolute;
+      top: -30vh;
+    right: -35vw;
+}
+.vue{
+    position: absolute;
+    top: -20vh;
+    right: -45vw;
+}
+.sass{
+    position: absolute;
+    top: 10vh;
+    right: -30vw;
+}
+.github{
+    position: absolute;
+    top: -8vh;
+    right: -40vw;
+}
+.java{
+    position: absolute;
+    top: -40vh;
+    right: -30vw;
+}
 /* --------------------------------------------- */
 
 @media (max-width: 600px) {
