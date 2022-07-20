@@ -114,7 +114,7 @@ main {
   .title {
   font-size: 8vw;
   font-weight: 600;
-  margin: 10vw 0vw;
+  margin: 5vw 0vw;
 
 }
 
@@ -130,7 +130,7 @@ main {
   margin: 2vw;
 }
 .box img {
-  border: 0.4vw solid #fff;
+  border: 2vw solid #fff;
 
   width: 40vw;
   height: 40vw;

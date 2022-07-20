@@ -36,13 +36,15 @@ img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
+
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  scroll-behavior:smooth ;
+  /* -webkit-transition: all 300ms ease; */
 }
 
 

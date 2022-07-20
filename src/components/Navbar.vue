@@ -1,7 +1,10 @@
 <template>
   <div class="navbar">
     <nav>
-      <div class="logo">Logo</div>
+      <div class="logo"><img src="../assets/logo.png" alt=""></div>
+      <div class="menu">
+        <MenuBar />
+      </div>
       <div class="navlinks">
         <a href="#">Home</a> <a href="#">Recent Work</a>
         <a href="#">Contact Me</a>
@@ -12,8 +15,12 @@
 </template>
 
 <script>
+import MenuBar from "./MenuBar.vue";
 export default {
   name: "nav-bar",
+  components: {
+    MenuBar,
+  },
 };
 </script>
 
@@ -31,14 +38,20 @@ export default {
   align-items: center;
   font-size: 1.5vw;
   font-weight: bold;
+}.logo img{
+  width: 5vw;
+  height: 5vw;
 }
-
-#contact a{
+a {
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 500;
   margin: 0.7vw;
   color: rgb(255, 255, 255);
+  transition: all 300ms ease-in;
+}
+a:hover{
+  color: rgba(255, 255, 255, 0.398);
 }
 nav {
   display: flex;
@@ -50,18 +63,27 @@ nav {
   backdrop-filter: blur(1vw);
 }
 .navbar {
-  background-image: url("https://images.unsplash.com/photo-1657127791336-c9dd34247f78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
+  position: relative;
+  background: linear-gradient(to right, #63e8ea, #ffd025);
+}
+.menu {
+  display: none;
 }
 
 /* --------------------------------------------- */
 
 @media (max-width: 600px) {
+  .menu {
+    display: inline-block;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    
+  }
   .logo {
+    position: absolute;
+    top: 0vh;
+    left: 77vw;
     font-size: 7.5vw;
   }
   a {
@@ -71,10 +93,16 @@ nav {
     display: none;
   }
   nav {
+    position: absolute;
     background-color: rgba(181, 181, 181, 0);
   }
   .navbar {
-    background-image: url("https://images.unsplash.com/photo-1655998233171-ee5b130acba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80");
+    z-index: 2;
+    background: linear-gradient(to top, #63e8ea, #25ff9999);
   }
+  .logo img{
+  width: 20vw;
+  height: 20vw;
+}
 }
 </style>

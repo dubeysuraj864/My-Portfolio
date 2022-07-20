@@ -12,7 +12,7 @@
           pellentesque.
         </div> -->
           <div class="button">
-            <button id="contact" class="fill"><a style="text-decoration: none;   color: rgb(255, 255, 255);" href="">Contact Me Now</a></button>
+            <button id="contact" class="fill"><a style="text-decoration: none;   color: rgb(255, 255, 255);" href="https://www.linkedin.com/in/suraj-dubey-a1baa3202/">Contact Me Now</a></button>
           </div>
         </div>
       </div>
@@ -23,8 +23,10 @@
 </template>
 
 <script>
+
 export default {
   name: "container-main",
+
 };
 </script>
 
@@ -38,11 +40,7 @@ export default {
 }
 .container {
   font-family: "Poppins", sans-serif;
-  background-image: url("https://images.unsplash.com/photo-1657127791336-c9dd34247f78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
+    background: linear-gradient(to right, #63e8ea, #ffd025);
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -115,14 +113,14 @@ export default {
 
 @media (max-width: 600px) {
   .container {
-    height: 72.6vh;
+    height: 82.6vh;
     flex-direction: column;
-   background-image: url("https://images.unsplash.com/photo-1655998233171-ee5b130acba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80");
+ background: linear-gradient(to bottom, #63e8ea, #ffd025);
   }
 
   .left {
     position: absolute;
-    top: 4vh;
+    top: 10vh;
     left: 0vw;
   }
   .myself {
@@ -140,12 +138,15 @@ export default {
     position: absolute;
     /* top: 50.6vh; */
     left: 21vw;
+      border: 1vw solid #fff;
+        color: rgb(255, 255, 255);
+        box-shadow: none;
    }
   .right {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     position: absolute;
-    top: 24vh;
+    top: 34vh;
     right: 0vw;
   }
   .right img {
