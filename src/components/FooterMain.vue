@@ -14,10 +14,14 @@
     </div>
   </div>
   <div class="foot">
-       <div class="by">Suraj Dubey — Copyright 2022</div>
-      <div class="social"><a href="#">Instagram</a><a href="#">Linkedin</a><a href="#">Twitter</a></div>
-   
+    <div class="by">Suraj Dubey — Copyright 2022</div>
+    <div class="social">
+      <a href="https://www.instagram.com/dubeysuraj864/" target="_blank"><img src="../assets/instagram.png" alt="social" class="social-icon"></a>
+      <a href="https://www.linkedin.com/in/suraj-dubey-a1baa3202/" target="_blank"><img src="../assets/linkedin-logo.png" alt="social" class="social-icon"></a>
+      <a href="https://twitter.com/dubeysuraj864" target="_blank"><img src="../assets/twitter-sign.png" alt="social" class="social-icon"></a>
+      <a href="https://github.com/dubeysuraj864" target="_blank"><img src="../assets/github-sign.png" alt="social" class="social-icon"></a>
     </div>
+  </div>
 </template>
 
 <script>
@@ -63,8 +67,7 @@ export default {
   align-items: center;
   padding: 1vw 3vw;
   gap: 1vw;
-  background: rgb(0, 0, 0);
-  box-shadow: 0.2vw 0.4vw 1vw rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to right, #63e8ea, #ffd025);
   border-radius: 0.1vw;
   border: none;
   outline: none;
@@ -77,27 +80,31 @@ export default {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-#contact:hover {
-  background: linear-gradient(to right, #63e8ea, #ffd025);
-  shadow: 0.2vw 0.4vw 1vw #63e8ea, #ffd025;
+
+.foot {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-  .foot {
-    text-align: center;
-    width: 100%;
-    background-color: #000;
-    padding: 1vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .by{
-    font-size: 1vw;
-      /* padding: 2vw 2vw 0vw 2vw; */
-  }
-  .social a{
-        font-size: 1vw;
-    margin: 1vw 1vw;
-  }
+.by {
+  font-size: 1vw;
+  /* padding: 2vw 2vw 0vw 2vw; */
+}
+.social a {
+  color: skyblue;
+  font-size: 1vw;
+  font-weight: 600;
+  margin: 1vw 1vw;
+}
+.social-icon{
+  width: 1.5vw;
+  height:1.5vw;
+}
 /* --------------------------------------------- */
 
 @media (max-width: 600px) {
@@ -110,7 +117,6 @@ export default {
     );
     height: 50vh;
     color: white;
-    
   }
   .title {
     font-size: 10vw;
@@ -126,22 +132,32 @@ export default {
     padding: 5vw 5vw;
     margin-top: 5vw;
     margin-bottom: 5vw;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+  }
+  #contact:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .foot {
     text-align: center;
     width: 100%;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
     padding: 5vw;
-        flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
-  .by{
-    font-size: 2vw;
-      padding: 5vw 2vw 0vw 2vw;
+  .by {
+    font-size: 3vw;
+    padding: 5vw 2vw 0vw 2vw;
   }
-  .social a{
-      font-size: 4vw;
+  .social a {
+    color: skyblue;
+    font-weight: 600;
     margin: 2vw 2vw;
   }
+  .social-icon{
+  width: 8.5vw;
+  height: 8.5vw;
+}
 }
 </style>

@@ -12,7 +12,7 @@
           pellentesque.
         </div>
           <div class="button">
-            <button id="contact" class="fill"><a style="text-decoration: none;   color: rgb(255, 255, 255);" href="https://www.linkedin.com/in/suraj-dubey-a1baa3202/">Contact Me Now</a></button>
+            <button id="contact" class="fill"><a style="text-decoration: none;   color: rgb(255, 255, 255);" href="https://www.linkedin.com/in/suraj-dubey-a1baa3202/"> Contact Me Now</a></button>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 33vw;
+  height: 43.6vw;
   position: relative;
   
 }
@@ -57,12 +57,12 @@ export default {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 15vw;
+  left: 12vw;
 }
 .myself {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: bold;
-  line-height: 3.4vw;
+  line-height: 4.4vw;
 }
 .intro {
   width: 40vw;
@@ -85,7 +85,7 @@ export default {
   gap: 1vw;
   background: rgba(255, 255, 255, 0.2);
   color: rgb(255, 255, 255);
-  box-shadow: 0.2vw 0.4vw 1vw rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0.2vw 0.4vw 1vw rgba(0, 0, 0, 0.25); */
   border-radius: 0.1vw;
   outline: none;
   font-style: normal;
@@ -93,6 +93,10 @@ export default {
   font-size: 1.2vw;
   cursor: pointer;
   border: none;
+}
+#contact img{
+  width: 1.5vw;
+  height: 1.9vh;
 }
 #contact:hover {
   transition: all 300ms ease;
@@ -105,8 +109,8 @@ export default {
   right: 10vw;
 }
 .right img {
-  width: 34vw;
-  height: 33.5vw;
+  width: 44vw;
+  height: 44vw;
 }
 
 /* --------------------------------------------- */

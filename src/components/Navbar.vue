@@ -47,8 +47,8 @@ export default {
 }
 a {
   text-decoration: none;
-  font-size: 1.5vw;
-  font-weight: 500;
+  font-size: 1.2vw;
+  font-weight: 400;
   margin: 0.7vw;
   color: rgb(255, 255, 255);
   transition: all 300ms ease;
