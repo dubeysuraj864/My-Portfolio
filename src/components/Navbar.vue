@@ -1,7 +1,10 @@
 <template>
   <div class="navbar">
     <nav>
-      <div class="logo"><img src="../assets/logo.png" alt=""></div>
+      <div class="logo">
+       XD
+        <!-- <img src="../assets/logo.png" alt=""> -->
+        </div>
       <div class="menu">
         <MenuBar />
       </div>
@@ -82,7 +85,7 @@ nav {
   }
   .logo {
     position: absolute;
-    top: 0vh;
+    top: 2vh;
     left: 77vw;
     font-size: 7.5vw;
   }
