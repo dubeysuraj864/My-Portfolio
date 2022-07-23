@@ -40,13 +40,15 @@ export default {
 .footer {
   text-align: center;
   width: auto;
-  height: 70vh;
+  height: fit-content;
   color: rgb(0, 0, 0);
   background-color: rgb(225, 225, 225);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: auto;
+  padding: 10vh 2vh;
 }
 .title {
   font-size: 10vw;
@@ -99,11 +101,11 @@ export default {
   color: skyblue;
   font-size: 1vw;
   font-weight: 600;
-  margin: 1vw 1vw;
+  margin: 1.5vw 1.5vw;
 }
 .social-icon{
-  width: 1.5vw;
-  height:1.5vw;
+  width: 2.5vw;
+  height:2.5vw;
 }
 /* --------------------------------------------- */
 
