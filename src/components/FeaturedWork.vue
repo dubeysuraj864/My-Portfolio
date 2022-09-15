@@ -4,40 +4,22 @@
     <div class="work">
       <div class="group-work">
         <div class="box1 box">
-          <img
-            src="https://blog.spoongraphics.co.uk/wp-content/uploads/2015/11/thumbnail9.jpg"
-            alt=""
-          />
+       
         </div>
         <div class="box2 box">
-          <img
-            src="https://www.vectornator.io/blog/content/images/2022/05/611ab4846fca351648d90674_Cover-Vector-Art.png"
-            alt=""
-          />
+        
         </div>
         <div class="box3 box">
-          <img
-            src="https://3.bp.blogspot.com/-K0n-CdbmUx0/XDS7ZYNjg7I/AAAAAAAAAXI/zQXLcbby8Q4A-UqFyXlyNkun04VId-dDQCLcBGAs/s1600/HRMonochromatic_End.JPG"
-            alt=""
-          />
+       
         </div>
         <div class="box4 box">
-          <img
-            src="https://miro.medium.com/max/1400/0*jy-UfPAGQd_FN9QN.png"
-            alt=""
-          />
+         
         </div>
         <div class="box5 box">
-          <img
-            src="https://i.pinimg.com/originals/14/2b/05/142b059a8ca0f6c3097ddf75aa7207a1.png"
-            alt=""
-          />
+      
         </div>
         <div class="box6 box">
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/78775d76358541.5c670847b25f2.jpg"
-            alt=""
-          />
+      
         </div>
       </div>
     </div>
@@ -93,20 +75,17 @@ main {
   /* grid-template-rows: 1fr 1fr 1fr; */
 }
 .box {
-  margin: 1vw;
-}
-.box img {
-  border: 0.4vw solid #fff;
-  transition: all 300ms ease;
-  object-fit: cover;
+  width: 15vw;
+  height: 15vw;
+  margin: 2vw;
+  background: radial-gradient( rgb(93, 221, 144), rgb(35, 217, 245));
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   cursor: pointer;
-  width: 20vw;
-  height: 20vw;
-  box-shadow: 0.2vw 0.4vw 1vw rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease;
 }
-.box img:hover {
-  border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-  /* box-shadow: none; */
+.box:hover{
+  box-shadow: none;
 }
 
 /* --------------------------------------------- */
@@ -133,14 +112,13 @@ main{
   grid-template-columns: 1fr 1fr;
 }
 .box {
-  margin: 2vw;
-}
-.box img {
-  border: 1vw solid #fff;
-
   width: 45vw;
   height: 45vw;
-  
+  margin: 2vw;
+  background: radial-gradient( rgb(93, 221, 144), rgb(35, 217, 245));
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
  }
 </style>
